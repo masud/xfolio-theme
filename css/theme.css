@@ -1,0 +1,32 @@
+body {
+  background: #f5f8f9;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 40px 20px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  border-right: 1px solid #eee;
+}
+.main {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.item {
+  background: #fff;
+}
+.ajax-content {
+  background: #fff;
+  width: 60%;
+  margin: 10px auto;
+  padding: 20px;
+}
+.skip-link {
+  display: none;
+}
