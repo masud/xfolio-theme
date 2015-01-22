@@ -5,12 +5,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+	<?php 
+	if (has_post_thumbnail( $post->ID ) ){
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' ); ?>
+		<img src="<?php echo $image[0]; ?>">	
+	<?php } else { ?>
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/deafult.png">
+	<?php	} ?>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php xfolio_posted_on(); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

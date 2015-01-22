@@ -53,6 +53,11 @@ function xfolio_setup() {
 		'primary' => __( 'Primary Menu', 'xfolio' ),
 	) );
 
+	// Enable support for Post Thumbnails, and declare two sizes.
+	add_theme_support( 'post-thumbnails' );
+	// set_post_thumbnail_size( 672, 372, true );
+	add_image_size( 'xfolio-homepage-thumb', 730, 400, array( 'left', 'top' ));
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
