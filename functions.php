@@ -109,6 +109,7 @@ function xfolio_scripts() {
 	
 	wp_enqueue_style( 'xfolio-bootstrap-style', get_template_directory_uri() .'/bower_components/bootstrap/dist/css/bootstrap.min.css');
 	wp_enqueue_style( 'xfolio-magnific-style', get_template_directory_uri() .'/bower_components/magnific-popup/dist/magnific-popup.css');
+	wp_enqueue_style( 'xfolio-animate-style', get_template_directory_uri() .'/css/animate.css');
 	wp_enqueue_style( 'xfolio-theme-style', get_template_directory_uri() .'/css/theme.css');
 
 	wp_enqueue_script( 'xfolio-bootstrap-js', get_template_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.min.js', array(), '', true );

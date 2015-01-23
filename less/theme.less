@@ -3,22 +3,74 @@
 body{
 	background: #f5f8f9;
 	color: @text-color;
+	font-family: 'Raleway', sans-serif;
 }
-.sidebar{ padding: 40px 20px; }
+
+// Sidebar + Widget styles
+// ---------------------------------
 .sidebar {
-	position: fixed;
-	top: 0; bottom: 0; left: 0;
-	z-index: 1000;
+	position: fixed; top: 0; bottom: 0; left: 0; z-index: 1000;
 	display: block;
-	overflow-x: hidden;
-	overflow-y: auto;
+	padding: 40px 20px; 
+	overflow-x: hidden; overflow-y: auto;
 	background-color: #fff;
 	border-right: 1px solid #eee;
 }
-.main { }
+.site-branding{
+	.logo{ 
+		display: block;
+		width: 162px;
+		height: 36px;
+		background: url( ../images/logo.png ) no-repeat;
+	}
+	.logo,
+	.site-description{ text-indent: -9999px; }
+}
+// Widget - EDD Category
+.widget{
+	margin-top: 40px;
+	.widget-title{ text-transform: uppercase; font-size: 14px; font-weight: bold; }
+}
+.edd-taxonomy-widget,
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 10px 0;
+
+	> li > a{ 
+		display: block;
+		line-height: 30px;
+		margin-bottom: 5px;
+		color: #666;
+	}
+}
+.textwidget{ font-size: 13px; color: #666; }
+
 .hero-area{ 
-	background: #fff; 
-	h1, h2{ margin: 0 ;}
+	background: url(../images/bg/bg2.jpg) no-repeat 50% 50%; 
+	background-size: cover;
+	margin-left: -15px;
+	margin-right: -15px;
+	color: #fff;
+	vertical-align: center;
+	text-align: center;
+
+	.title{ 
+		font-size: 4.5em;
+		padding-top: 25%; 
+		margin: 0 0 30px; 
+	}
+	.subtitle{ text-transform: uppercase; font-size: 22px; }
+}
+.navbar{
+	background: #fff;
+	margin-left: -15px;
+	margin-right: -15px;
+	border-radius: 0;
+	border-width: 0 0 1px 0;
+
+	&.affix{ top: 0; z-index: 999; width: 100%; }
+	.pull-right { margin-right: 15px; }
 }
 .page-header{
 	margin: 0 0 20px;

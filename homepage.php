@@ -8,6 +8,25 @@ $recent = xfolio_get_posts('download');
 $featured = xfolio_get_posts('download', 1, 'featured');
 ?>
 
+<div class="hero-area">
+	<h1 class="title animated bounceInUp">Welcome To ThemesGrove</h1>
+	<h2 class="subtitle animated zoomIn">Source of Free Joomla, Wordpress, HTML themes</h2>
+</div>
+
+<nav class="navbar navbar-default">
+	<form role="search" method="get" class="navbar-form navbar-left" action="http://localhost/themesgrove/">
+		<div class="form-group">
+	    	<input type="search" class="form-control search-field" placeholder="Search …" value="" name="s" title="Search for:">
+	  	</div>
+		<!-- <input type="submit" class="search-submit" value="Search"> -->
+	</form>
+	<div class="navbar-left">
+		<a class="btn btn-default navbar-btn">Login</a>
+		<a class="btn btn-success navbar-btn">Submit Item</a>	
+	</div>
+	
+
+</nav>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 

@@ -4,6 +4,13 @@
         var wh = $(window).height();
         $('.hero-area').css('height', wh);
 
+        // Nav affix
+        $('.navbar').affix({
+          offset: {
+            top: wh
+          }
+        });
+        
         $('.ajax-link').magnificPopup({
           type: 'ajax'
         });
