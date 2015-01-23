@@ -135,6 +135,11 @@ function xfolio_get_posts( $type, $post_per_page=4, $cat='' )
 	return $post;
 }
 
+
+
+
+
+
 /**
  * Implement the Custom Header feature.
  */
@@ -159,3 +164,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+//___Load Framework___//
+
+require_once dirname( __FILE__ ) .'/inc/cs-framework/cs-framework.php';
+
+
+define( 'CS_ACTIVE_FRAMEWORK',  true  ); // default true
+define( 'CS_ACTIVE_METABOX',    true ); // default true
+define( 'CS_ACTIVE_SHORTCODE',  false ); // default true
+define( 'CS_ACTIVE_CUSTOMIZE',  true ); // default true
