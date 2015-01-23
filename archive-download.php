@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="archive" class="site-main" role="main">
+	<div id="ccc" class="content-area">
+		<main id="download" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 

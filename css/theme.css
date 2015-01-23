@@ -1,9 +1,7 @@
 body {
   background: #f5f8f9;
   color: #314046;
-}
-.sidebar {
-  padding: 40px 20px;
+  font-family: 'Raleway', sans-serif;
 }
 .sidebar {
   position: fixed;
@@ -12,17 +10,79 @@ body {
   left: 0;
   z-index: 1000;
   display: block;
+  padding: 40px 20px;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #fff;
   border-right: 1px solid #eee;
 }
-.hero-area {
-  background: #fff;
+.site-branding .logo {
+  display: block;
+  width: 162px;
+  height: 36px;
+  background: url(../images/logo.png ) no-repeat;
 }
-.hero-area h1,
-.hero-area h2 {
-  margin: 0 ;
+.site-branding .logo,
+.site-branding .site-description {
+  text-indent: -9999px;
+}
+.widget {
+  margin-top: 40px;
+}
+.widget .widget-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+.edd-taxonomy-widget,
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.edd-taxonomy-widget > li > a,
+.menu > li > a {
+  display: block;
+  line-height: 30px;
+  margin-bottom: 5px;
+  color: #666;
+}
+.textwidget {
+  font-size: 13px;
+  color: #666;
+}
+.hero-area {
+  background: url(../images/bg/bg2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  margin-left: -15px;
+  margin-right: -15px;
+  color: #fff;
+  vertical-align: center;
+  text-align: center;
+}
+.hero-area .title {
+  font-size: 4.5em;
+  padding-top: 25%;
+  margin: 0 0 30px;
+}
+.hero-area .subtitle {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.navbar {
+  background: #fff;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+}
+.navbar.affix {
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+.navbar .pull-right {
+  margin-right: 15px;
 }
 .page-header {
   margin: 0 0 20px;
