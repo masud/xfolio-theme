@@ -169,6 +169,19 @@ $options[]        = array(
       ),
     ),
 
+
+      // codestar hero area banner upload
+    array(
+      'name'      => 'codestar_upload_hero_area',
+      'control'   => array(
+        'type'    => 'cs_field',
+        'options' => array(
+          'type'  => 'upload',
+          'title' => 'Codestar Hero Area Upload',
+        ),
+      ),
+    ),
+
     // codestar image select
     array(
       'name'          => 'codestar_image_select',

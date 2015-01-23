@@ -8,9 +8,11 @@ $recent = xfolio_get_posts('download');
 $featured = xfolio_get_posts('download', 1, 'featured');
 ?>
 
-<div class="hero-area">
+<div class="hero-area" style="background-image: url(<?php echo cs_get_customize_option( 'codestar_upload_hero_area' ); ?>);">	
+
 	<h1 class="title animated bounceInUp">Welcome To ThemesGrove</h1>
 	<h2 class="subtitle animated zoomIn">Source of Free Joomla, Wordpress, HTML themes</h2>
+
 </div>
 
 <nav class="navbar navbar-default">

@@ -25,14 +25,16 @@
 <div class="row">
 	<div id="sidebar" class="col-sm-3 col-md-2 sidebar">
 		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			<div class="site-branding">			
+			<img class="logo" src="<?php echo cs_get_customize_option( 'codestar_upload' ); ?>"> 
+
 				<?php					
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif;
 				?>
+				
 			</div><!-- .site-branding -->
 		</header><!-- .site-header -->
 
