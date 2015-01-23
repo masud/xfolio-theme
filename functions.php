@@ -113,7 +113,7 @@ function xfolio_scripts() {
 
 	wp_enqueue_script( 'xfolio-bootstrap-js', get_template_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.min.js', array(), '', true );
 	wp_enqueue_script( 'xfolio-magnific-js', get_template_directory_uri() . '/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js', array(), '', true );
-	wp_enqueue_script( 'xfolio-theme-js', get_template_directory_uri() . '/js/theme.js', array(), '', true );
+	wp_enqueue_script( 'xfolio-theme-js', get_template_directory_uri() . '/js/theme.min.js', array(), '', true );
 	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
