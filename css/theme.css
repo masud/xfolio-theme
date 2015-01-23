@@ -2,8 +2,7 @@ body {
   background: #f5f8f9;
   color: #314046;
 }
-.sidebar,
-.main {
+.sidebar {
   padding: 40px 20px;
 }
 .sidebar {
@@ -18,13 +17,17 @@ body {
   background-color: #fff;
   border-right: 1px solid #eee;
 }
+.hero-area {
+  background: #fff;
+}
+.hero-area h1,
+.hero-area h2 {
+  margin: 0 ;
+}
 .page-header {
   margin: 0 0 20px;
   font-size: 20px;
   text-transform: uppercase;
-}
-.items {
-  margin: 0 -15px;
 }
 .item {
   background: #fff;
@@ -42,7 +45,7 @@ body {
   background: #fff;
   box-shadow: 0 0 5px #ddd;
   padding: 15px;
-  margin: 0 -15px 30px;
+  margin-bottom: 30px;
 }
 .featured-item figure {
   float: left;

@@ -42,4 +42,17 @@
 		<?php get_sidebar(); ?>
 	</div><!-- .sidebar -->
 
-	<div id="content" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<div id="content" class="col-sm-9 col-md-10 col-md-offset-2 main">
+		
+		<div class="hero-area">
+			<h1>Welcome To ThemesGrove</h1>
+			<h2>Source of Free Joomla, Wordpress, HTML themes</h2>
+		</div>
+		
+		<nav class="navbar navbar-default">
+			<form class="navbar-form navbar-left" role="search">
+			  <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Search">
+			  </div>
+			</form>
+		</nav>
