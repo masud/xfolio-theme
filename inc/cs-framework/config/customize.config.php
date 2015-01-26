@@ -23,6 +23,15 @@ $options[]        = array(
       ),
     ),
 
+       // core text
+    array(
+      'name'      => 'font_size_option',
+      'control'   => array(
+        'label'   => 'Font size H1',
+        'type'    => 'text',
+      ),
+    ),
+
     // core text with default
     array(
       'name'      => 'text_option_with_default',
